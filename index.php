@@ -4,7 +4,7 @@ for ($i=0; $i<20; $i++) {
     // print $mas[$i];
     // print"<br>";
 }
-var_dump($max);
+var_dump($mas);
 
 // По-умочанию первый элемент самый большой.
 $max = $mas[0];
