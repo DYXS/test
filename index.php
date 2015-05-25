@@ -1,9 +1,10 @@
 <?php
 for ($i=0; $i<20; $i++) {
     $mas[] = rand(0, 100);
-    print $mas[$i];
-    print"<br>";
+    // print $mas[$i];
+    // print"<br>";
 }
+var_dump($max);
 
 // По-умочанию первый элемент самый большой.
 $max = $mas[0];
@@ -18,3 +19,4 @@ foreach( $mas as $key => $value){
         }
     }
 }
+print $max;
