@@ -1,10 +1,11 @@
 <?php
+$summa = array();
 for ($i=0; $i<20; $i++) {
     $mas[] = rand(0, 100);
+    $summa[] = $mas[$i];
     print $mas[$i];
     print"<br>";
 }
-
 // По-умочанию первый элемент самый большой.
 $max = $mas[0];
 $min = $mas[0];
@@ -24,7 +25,16 @@ foreach( $mas as $key => $value){
     }
 }
 
+$Total = array_sum($summa) / $key;
 print"<br>";
+print"Среднее: ";
+echo round($Total);
+
+print"<br>";
+print"Максимум: ";
 print $max;
 print"<br>";
+print"Минимум: ";
 print $min;
+print"<br>";
+
