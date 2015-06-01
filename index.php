@@ -40,4 +40,5 @@ print"<br>";
 
 for ($mas[$key]; $mas[$key]>0 ;$mas[$key--]) {
     echo $mas[$key];
+    print" - ";
 }
