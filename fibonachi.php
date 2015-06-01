@@ -2,13 +2,13 @@
 
 function fib($num)
 {
-    if ($num = 0) {
+    if ($num == 0) {
         return 0;
     }
-    if ($num = 1) {
+    if ($num == 1) {
         return 1;
     }
-    if ($num = 2) {
+    if ($num == 2) {
         return 1;
     }
 
@@ -17,7 +17,7 @@ function fib($num)
     }
 }
 
-for ($num = 1; $num <= 16; $num++) {
+for ($num = 0; $num <= 16; $num++) {
     echo(fib($num));
 }
 
