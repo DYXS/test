@@ -42,3 +42,8 @@ for ($mas[$key]; $mas[$key]>0 ;$mas[$key--]) {
     echo $mas[$key];
     print" - ";
 }
+
+$arr = array_reverse ($mas[$i]);
+print"<br>";
+print"Обр";
+echo round($mas[$i]);
