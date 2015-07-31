@@ -1,15 +1,19 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Форма</title>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
 </head>
-
 <body>
 
-<?php
 
-	echo "<h1>Привет, " . $_POST["username"] . "</h1>";
+<h1>Введите ваш текст</h1>
 
-?>
+<form method="post" action="replace.php">
+    <input type="text" name="replacetext">
+    <input type="submit">
+</form>
+
 
 </body>
 </html>

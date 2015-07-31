@@ -9,14 +9,21 @@ $bodys = " БЛЕАТЬ ХУЙ ПИЗДА ГОВНО МУДИЛО ХУЙЛО Е�
 $matwords = array ("ХУЙ", "ПИЗДА", "ЕБЛО");
 $scenwords = array ("Х*й", "П**да", "Е***ло");
 
-$newbody = str_replace($matwords, $scenwords, $_POST, $howmany);
+$newbody = str_replace($matwords, $scenwords, $_POST["replacetext"], $howmany);
 
+$err_message = '';
+if (empty($newbody)) {
 
+    echo "Ты че долбоеб?";
+}
 
+else {
 
-echo $newbody;
-echo "</br></br>";
+    echo "Привет, " . $newbody;
 
-echo $howmany;
+    echo "</br></br>";
+
+    echo "Количество цунзур: " . $howmany;
+}
 
             ?>
