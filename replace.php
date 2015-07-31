@@ -9,7 +9,9 @@ $bodys = " БЛЕАТЬ ХУЙ ПИЗДА ГОВНО МУДИЛО ХУЙЛО Е�
 $matwords = array ("ХУЙ", "ПИЗДА", "ЕБЛО");
 $scenwords = array ("Х*й", "П**да", "Е***ло");
 
-$newbody = str_replace($matwords, $scenwords, $bodys, $howmany);
+$newbody = str_replace($matwords, $scenwords, $_POST, $howmany);
+
+
 
 
 echo $newbody;
