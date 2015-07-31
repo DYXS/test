@@ -11,7 +11,6 @@ $scenwords = array ("Х*й", "х*и", "П**да", "п**да", "Е***ло", "е**
 
 $newbody = str_replace($matwords, $scenwords, $_POST["replacetext"], $howmany);
 
-$err_message = '';
 if (empty($newbody)) {
 
     echo "Ты че долбоеб?";
