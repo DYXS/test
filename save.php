@@ -11,11 +11,9 @@ if (empty($login) or empty($pass) or empty($email))
 
 include ("bd.php");
 
-$result = mysql_query("SELECT id FROM users WHERE username='$login'",$db);
+$result = mysql_query ("INSERT INTO users (username,password,email) VALUES('$login','$pass','$email')");
 
-$result2 = mysql_query ("INSERT INTO users (username,password,email) VALUES('$login','$pass','$email')");
-
-if ($result2=='TRUE')
+if ($result=='TRUE')
 {
     echo "Все пучком";
 }
