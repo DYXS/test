@@ -11,13 +11,10 @@ if (empty($login) or empty($pass) or empty($email))
 
 include ("bd.php");
 
-$result = mysql_query("SELECT id FROM users WHERE login='$login'",$db);
+$result = mysql_query("SELECT id FROM users WHERE username='$login'",$db);
 $myrow = mysql_fetch_array($result);
-if (!empty($myrow['id'])) {
-    exit ("Введите другой логин.");
-}
 
-$result2 = mysql_query ("INSERT INTO users (login,password,email) VALUES('$login','$pass','$email')");
+$result2 = mysql_query ("INSERT INTO users (username,password,email) VALUES('$login','$pass','$email')");
 
 if ($result2=='TRUE')
 {
