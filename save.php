@@ -14,9 +14,9 @@ if (empty($_POST['login']) or empty($_POST['pass']) or empty($_POST['pass2']) or
 
 include ("bd.php");
 
-$hash = password_hash($_POST['pass2'], PASSWORD_DEFAULT);
+/*$hash = password_hash($_POST['pass2'], PASSWORD_DEFAULT);*/
 
-if (password_verify($_POST['pass'], $hash)) {
+if ($_POST['pass'] == $_POST['pass2']) {
 
     $result = mysql_query("INSERT INTO users (username,password,email, created, modified) VALUES ('{$_POST['login']}', '{$_POST['pass']}', '{$_POST['email']}', NOW(), NOW())");
     if ($result)
