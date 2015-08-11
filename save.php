@@ -17,8 +17,8 @@ include ("bd.php");
 /*$hash = password_hash($_POST['pass2'], PASSWORD_DEFAULT);*/
 
 if ($_POST['pass'] == $_POST['pass2']) {
-
-    $result = mysql_query("INSERT INTO users (username,password,email, created, modified) VALUES ('{$_POST['login']}', '{$_POST['pass']}', '{$_POST['email']}', NOW(), NOW())");
+    $hash = password_hash($_POST['pass'], PASSWORD_DEFAULT);
+    $result = mysql_query("INSERT INTO users (username,password,email, created, modified) VALUES ('{$_POST['login']}', '$hash', '{$_POST['email']}', NOW(), NOW())");
     if ($result)
     {
         echo "Все пучком";
