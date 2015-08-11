@@ -19,6 +19,10 @@
         <label>Ваш пароль:<br></label>
         <input name="pass" type="password" size="15">
     </p>
+    <p>
+        <label>Ваш пароль:<br></label>
+        <input name="pass2" type="password" size="15">
+    </p>
     <!--**** В поле для паролей (name="password" type="password") пользователь вводит свой пароль ***** -->
     <p>
         <input type="submit" name="submit" value="Зарегистрироваться">
